@@ -1,0 +1,21 @@
+.help-desk { padding: 1rem; }
+
+.help-desk__header { display: flex; justify-content: flex-end; }
+
+.help-desk__btn-add,
+.help-desk__list,
+.help-desk__item-loading { background-color: #ffffff; }
+
+.help-desk__btn-add,
+.help-desk__list { border: 1px solid #000000; }
+
+.help-desk__btn-add { padding: 0.5rem 1rem; border-radius: 0.75rem; cursor: pointer; }
+
+.help-desk__btn-add:focus-visible,
+.help-desk__btn-add:hover { outline: rgba(0, 0, 0, 0.25) solid 2px; }
+
+.help-desk__list { margin-top: 1rem; }
+
+.help-desk__list > * + * { border-top: 1px solid #000000; }
+
+.help-desk__item-loading { padding: 0.5rem; text-align: center; color: #808080; }

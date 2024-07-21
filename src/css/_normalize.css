@@ -1,14 +1,18 @@
-body, ul { margin: 0; }
+body, h2, p, ul { margin: 0; }
 
-button, ul { padding: 0; }
+button, input, textarea, ul { padding: 0; }
 
-button {
+button, input, textarea {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
     background-color: transparent;
     border: none;
 }
+
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: none; }
+
+textarea { resize: none; }
 
 ul { list-style-type: none; }
 

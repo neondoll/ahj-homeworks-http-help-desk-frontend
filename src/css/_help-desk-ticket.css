@@ -1,0 +1,52 @@
+.help-desk-ticket,
+.help-desk-ticket__content { display: flex; }
+
+.help-desk-ticket,
+.help-desk-ticket__status,
+.help-desk-ticket__btn-edit,
+.help-desk-ticket__btn-delete { background-color: #ffffff; }
+
+.help-desk-ticket { flex-direction: column; }
+
+.help-desk-ticket__content { flex-wrap: wrap; gap: 0.5rem 1rem; padding: 0.5rem; }
+
+.help-desk-ticket__left,
+.help-desk-ticket__status,
+.help-desk-ticket__right,
+.help-desk-ticket__controls,
+.help-desk-ticket__btn-edit,
+.help-desk-ticket__btn-delete { display: inline-flex; align-items: center; }
+
+.help-desk-ticket__left,
+.help-desk-ticket__right { gap: 1rem; }
+
+.help-desk-ticket__status,
+.help-desk-ticket__btn-edit,
+.help-desk-ticket__btn-delete {
+    flex-shrink: 0;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1;
+    border-radius: 9999px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.help-desk-ticket__status:focus-visible,
+.help-desk-ticket__status:hover,
+.help-desk-ticket__btn-edit:focus-visible,
+.help-desk-ticket__btn-edit:hover,
+.help-desk-ticket__btn-delete:focus-visible,
+.help-desk-ticket__btn-delete:hover { outline: rgba(0, 0, 0, 0.25) solid 2px; }
+
+.help-desk-ticket__name,
+.help-desk-ticket__created { pointer-events: none; }
+
+.help-desk-ticket__right { justify-content: flex-end; margin-left: auto; }
+
+.help-desk-ticket__controls { gap: 0.5rem; }
+
+.help-desk-ticket__description { display: none; padding: 0.5rem 0.5rem 0.5rem 3rem; white-space: break-spaces; }
+
+.help-desk-ticket--show-description > .help-desk-ticket__description { display: block; }

@@ -1,0 +1,52 @@
+.help-desk-modal,
+.help-desk-modal__form { padding: 1rem; }
+
+.help-desk-modal,
+.help-desk-modal__controls { display: flex; align-items: center; }
+
+.help-desk-modal { position: fixed; inset: 0; z-index: 50; background-color: rgba(0, 0, 0, 0.5); }
+
+.help-desk-modal__form,
+.help-desk-modal__input,
+.help-desk-modal__textarea,
+.help-desk-modal__btn-reset,
+.help-desk-modal__btn-submit { background-color: #ffffff; border: 1px solid #000000; }
+
+.help-desk-modal__form,
+.help-desk-modal__input,
+.help-desk-modal__textarea { width: 100%; }
+
+.help-desk-modal__form,
+.help-desk-modal__btn-reset,
+.help-desk-modal__btn-submit { border-radius: 0.75rem; }
+
+.help-desk-modal__form { margin: 0 auto; }
+
+.help-desk-modal__form > * + * { margin-top: 1rem; }
+
+.help-desk-modal__title { font-size: 1rem; font-weight: 400; line-height: 1; text-align: center; }
+
+.help-desk-modal__label,
+.help-desk-modal__input,
+.help-desk-modal__textarea { display: block; }
+
+.help-desk-modal__label { margin-bottom: 0.5rem; }
+
+.help-desk-modal__input,
+.help-desk-modal__textarea { padding: 0.25rem 0.5rem; }
+
+.help-desk-modal__input:focus-visible,
+.help-desk-modal__textarea:focus-visible,
+.help-desk-modal__btn-reset:focus-visible,
+.help-desk-modal__btn-reset:hover,
+.help-desk-modal__btn-submit:focus-visible,
+.help-desk-modal__btn-submit:hover { outline: rgba(0, 0, 0, 0.25) solid 2px; }
+
+.help-desk-modal__controls { justify-content: flex-end; gap: 1rem; }
+
+.help-desk-modal__btn-reset,
+.help-desk-modal__btn-submit { padding: 0.5rem 1rem; cursor: pointer; }
+
+@media (min-width: 768px) {
+    .help-desk-modal__form { max-width: 768px; }
+}

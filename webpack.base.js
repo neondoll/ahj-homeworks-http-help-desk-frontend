@@ -17,5 +17,6 @@ module.exports = {
     new FileManagerPlugin({ events: { onStart: { delete: ['dist'] } } }),
     new HtmlWebpackPlugin({ filename: 'index.html', template: path.join(__dirname, 'src', 'index.html') }),
     new MiniCssExtractPlugin({ filename: '[name].css', chunkFilename: '[id].css' }),
+    require('@import-meta-env/unplugin').webpack({ env: '.env', example: '.env.example' }),
   ],
 };
