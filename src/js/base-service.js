@@ -20,7 +20,8 @@ export default class BaseService {
       else {
         console.error('Ошибка:', await response.json());
       }
-    } catch (error) {
+    }
+    catch (error) {
       console.error(error);
     }
   }
