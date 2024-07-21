@@ -1,0 +1,15 @@
+body, ul { margin: 0; }
+
+button, ul { padding: 0; }
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+ul { list-style-type: none; }
+
+*, ::after, ::before { box-sizing: border-box; }
